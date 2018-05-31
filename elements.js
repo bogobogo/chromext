@@ -1,5 +1,5 @@
 const elements = {  
-    dummy : (   ,
+    dummy : '',
     arrow: '',
     gif: '',
     video: '',
