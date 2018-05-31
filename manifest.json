@@ -1,0 +1,25 @@
+{
+  "name": "chromext",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "experiment",
+  "homepage_url": "",
+  "background": {
+    "persistent": false,
+    "scripts": ["background.js"]
+},
+  "content_scripts": [{
+      "matches": ["*://*/*"],
+      "js":         ["inject.js"],
+      "run_at":     "document_start"
+  }],
+  "browser_action": {
+    "default_title": "experiment!"
+  },
+  "permissions": [
+    "https://*/*",
+    "http://*/*",
+    "tabs",
+    "activeTab"
+  ]
+}
